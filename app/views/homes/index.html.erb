@@ -1,0 +1,9 @@
+<h1>Flats</h1>
+
+<ul>
+  <% @flats.each do |apartment| %>
+    <li>
+      <%= link_to apartment["name"], apartment_path(apartment["id"]) %>
+    </li>
+  <% end %>
+</ul>
